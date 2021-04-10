@@ -15,6 +15,7 @@ import io.cucumber.junit.CucumberOptions;
             "json:target/json/file.json",
             },
         publish=true,
+        monochrome = true,
         dryRun=false
         )
 public class TestRunner {

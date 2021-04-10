@@ -1,5 +1,47 @@
+@smoke @sanity
+Feature: E-commerce Project Web Site of clothes
 
+@RedirectURL
+		Scenario: User is able to Open the browser, navigate to the URL and Search for Product
+			Given User navigated to the home application url
+			When User is on application landing page	
+			Then Application url is redirected to "http://automationpractice.com/index.php"
+			
+@TiteCheck
+		Scenario: User is able to Open the browser,navigate to the URL and Search for Product
+			Given User navigated to the home application url
+			When User is on application landing page
+			Then Application Title is "My Store"
+	
+@AppLogoDisplay
+		Scenario: User is able to Open the browser,navigate to the URL and Search for Product
+			Given User navigated to the home application url
+			When User is on application landing page
+			Then Application logo is displayed 
+			
+@AppLogoHeightDisplay
+		Scenario: User is able to Open the browser,navigate to the URL and Search for Product
+			Given User navigated to the home application url
+			When User is on application landing page
+			Then Application logo height is "99"
+			
+@AppLogoWidthDisplay
+		Scenario: User is able to Open the browser,navigate to the URL and Search for Product
+			Given User navigated to the home application url
+			When User is on application landing page
+			Then Application logo width is "350" 
+			
+@ApplicationSearchBar
+		Scenario: User is able to Open the browser,navigate to the URL and Search for Product
+			Given User navigated to the home application url
+			When Search box is displayed
+			And User Search for "Dress"
+			Then Search box show result containing "Dress" As more than 5
+			
 
+			
+
+	
 #Author: your.email@your.domain.com
 #Keywords Summary :
 #Feature: List of scenarios.
